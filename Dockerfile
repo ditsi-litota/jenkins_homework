@@ -1,2 +1,3 @@
 FROM debian:10-slim
-CMD ["sleep", "5m"]
+ARG SLEEP_TIME
+CMD ["sleep", "${SLEEP_TIME}"]
